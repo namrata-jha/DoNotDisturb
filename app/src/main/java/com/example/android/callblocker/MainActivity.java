@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                     label.setText("Do not disturb mode enabled.");
                 } else if (!isChecked) {
                     unregisterReceiver(incomingCallReceiver);
+                    label.setText("Do not disturb mode disabled.");
                 }
             }
         });
